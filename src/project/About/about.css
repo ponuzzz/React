@@ -1,0 +1,137 @@
+/* ---------------- Container ---------------- */
+.about-section {
+  padding: 100px 0;
+  background-color: #000;
+  color: #e2e8f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ---------------- Left Side ---------------- */
+.about-left {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+.skill{
+  font-weight: 600px;
+  text-align: center;
+  gap: 30px;
+  font-size: 50px;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.section-heading span {
+  background: linear-gradient(120deg,#DF8908 10%,#B415FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ---------------- Right Side (Big Box) ---------------- */
+.about-right {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.big-skill-box {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+/* ---------------- Small Skill Cards ---------------- */
+.small-skill-card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.small-skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.4);
+}
+
+.small-skill-card h4 {
+  margin: 10px 0;
+  color: #60a5fa;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.small-skill-card ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.small-skill-card ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #cbd5e1;
+  list-style: disc; /* default bullet for Option 2 */
+  padding-left: 20px;
+}
+
+.small-skill-card ul li .li-icon {
+  color: #60a5fa;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .big-skill-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .big-skill-box {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,85 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #111; /* Optional background */
+  color: white;
+  min-height: 100vh;
+}
+
+.hero img {
+  width: 170px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.highlight {
+  background: linear-gradient(120deg,#DF8908 10%,#B415FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 20px 0;
+  color: #eee;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.hero-connect, .hero-resume {
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Gradient button */
+.hero-connect {
+  background: linear-gradient(120deg,#DF8908 10%,#B415FF 100%);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.hero-connect:hover {
+  border: 2px solid white;
+  transform: translateY(-3px);
+}
+
+/* Outline button */
+.hero-resume {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.hero-resume:hover {
+  border-color: #B415FF;
+  color: #B415FF;
+  transform: translateY(-3px);
+}

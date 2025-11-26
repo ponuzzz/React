@@ -1,0 +1,94 @@
+/* Full Services Section */
+.services-section {
+  padding: 70px 40px;
+  background: #111;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+.services-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.services-title span {
+  color: #ff4ad9;
+  background: linear-gradient(90deg, #ff00e0, #ff7a00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Container Grid */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+/* NEW → spacing for second row */
+.second-row {
+  margin-top: 40px;
+}
+
+/* Card Styling */
+.service-card {
+  background: #181818;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Hover Glow */
+.service-card:hover {
+  border-color: #ff00c8;
+  box-shadow: 0 0 20px rgba(255, 0, 204, 0.4);
+  transform: translateY(-5px);
+}
+
+/* Number */
+.service-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0.7;
+}
+
+/* Title */
+.service-title {
+  font-size: 22px;
+  margin: 10px 0 10px;
+  background: linear-gradient(90deg, #ff00e0, #ffa600);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Description */
+.service-desc {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+/* Read More */
+.service-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.service-link:hover {
+  color: #ff00c8;
+  border-bottom: 1px solid #ff00c8;
+}
