@@ -1,7 +1,13 @@
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Crud from './local-Storage/Crud';
+//import AxiosDelete from './axios/AxiosDelete';
+//import AxiosPost from './axios/AxiosPost';
+//import AxiosPut from './axios/AxiosPut';
+//import AxiosGet from './axios/AxiosGet';
+//import TodoList from './local-Storage/TodoList';
+
+//import Crud from './local-Storage/Crud';
 //import Billing from './Form-validation/Billing';
 //import NormalForm from './Form-validation/NormalForm';
 //import HomeP from './project/HomeP';
@@ -164,8 +170,15 @@ function App() {
       {/* <Billing/>  */}
 
      {/*  local--- storage */}
-     <Crud/>
-
+     {/* <Crud/> */}
+     {/* <TodoList/> */}
+     
+     {/* axios */}
+     {/* <AxiosGet/> */}
+     {/* <AxiosPost/> */}
+     {/* <AxiosPut/>  */}
+     {/* <AxiosDelete/> */}
+     
 
     </>
   );

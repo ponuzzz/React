@@ -43,7 +43,10 @@ const Crud = () => {
             ...prev,
             [name]: value
         }))
+
     }
+
+
 
     const validate = () => {
         const newErrors = {};
@@ -105,6 +108,12 @@ const Crud = () => {
         setEditMode(false);
         setErrors({});
     }
+    const handleCancelAll = () => {
+        if (window.confirm("are you want to delete all data?")) {
+            setUsers([]);
+            localStorage.removeItem("users")
+        }
+    }
 
     return (
         <div className='formnew'>
@@ -157,7 +166,7 @@ const Crud = () => {
                 <h2>User List</h2>
                 {/* clear button */}
                 {users.length > 0 && (
-                    <button
+                    <button onClick={handleCancelAll}
                         style={{
                             background: 'red',
                             color: 'white',
