@@ -1,6 +1,23 @@
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+//import { AuthContext } from './auth_app/AuthContext';
+import AuthAPP from './auth_app/AuthApp';
+//import ShopingApp from './Reduxtoolkit/ShoppingApp';
+
+
+//import ShoppingApp from './Shopping cart with redux toolkit/ShopingApp';
+//import CounterApp1 from './redux-store/CounterApp1';
+//import { Provider } from 'react-redux';
+//import { store } from './redux-store/store';
+//import CounterApp1 from './redux-store/CounterApp1';
+//import ShoppingApp from './Shopping cart with redux toolkit/components/ShoppingApp';
+//import { CartContext } from './context/CartContext';
+//import ProductList from './cart_components/ProductList';
+//import CartAPP from './cart_components/CartApp';
+//import { CartContext } from './context/CartContext';
+//import ShoppingCart from './Reducer/ShoppingCart';
+//import Counter from './Reducer/Counter';
 //import AxiosDelete from './axios/AxiosDelete';
 //import AxiosPost from './axios/AxiosPost';
 //import AxiosPut from './axios/AxiosPut';
@@ -48,7 +65,7 @@ import './App.css'
 //import Props_Fc from './Functional-components/Props_Fc'
 //import State from './Functional-components/State'
 //import BasicFc from './Functional-components/BasicFc'
-//   import Fruits from './embedding-expression/Fruits';
+  // import Fruits from './embedding-expression/Fruits';
 //  //import CallingFunction from './embedding-expression/callingFunction'
 //  //import Basic from './embedding-expression/basic'
 // //import Conditional from './embedding-expression/Conditional'
@@ -67,7 +84,7 @@ function App() {
   return (
     <>
 
-      {/* <Fruits/> */}
+      {/* <Fruits/>  */}
       {/* ---embedding - expression */}
       {/* <Basic /> */}
       {/* <Sum/> */}
@@ -178,7 +195,22 @@ function App() {
      {/* <AxiosPost/> */}
      {/* <AxiosPut/>  */}
      {/* <AxiosDelete/> */}
-     
+
+     {/* ------------reducer---------- */}
+      {/* <Counter/>  */}
+      {/* <ShoppingCart/>  */}
+
+      {/* <CartContext/> */}
+        {/* <CartAPP/> */}
+        {/* <Provider store={store}>
+        <CounterApp1/>
+        </Provider> */}
+        {/* <ShopingApp/> */}
+        {/* <AuthContext/> */}
+        <AuthAPP/>
+        
+       
+      
 
     </>
   );

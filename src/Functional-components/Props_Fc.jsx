@@ -5,7 +5,7 @@ const Props_Fc = () => {
 
   return (
     <div>
-      <Greeting name='anjana'/>
+      <Greeting name='anju lakshmi'/>
     </div>
   )
 }
